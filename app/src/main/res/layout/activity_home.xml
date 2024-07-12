@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="614dp"
+        android:layout_height="409dp"
+        android:layout_marginBottom="600dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper_rose"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="368dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="346dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nhello_rose"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="22dp"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile1"
+                android:visibility="visible"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const1"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:alpha="0.9"
+            android:background="@drawable/reading">
+
+
+            <TextView
+                android:id="@+id/discover"
+                android:layout_width="154dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginEnd="105dp"
+                android:alpha="0.9"
+                android:fontFamily="casual"
+                android:paddingTop="25dp"
+                android:text="@string/discover_nbooks"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="334dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/textbox"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/const1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="143dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:src="@drawable/searchicon" />
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:text="Search" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/popular"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hor1" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="183dp">
+
+            <LinearLayout
+                android:layout_width="800dp"
+                android:layout_height="183dp"
+                android:background="@drawable/pink_bc"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/book1"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/chapstickgirl"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="142dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b1t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:text="@string/the_n_chapstick_n_girl"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/b1t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="@string/honey_jewelz"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/b1t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/free" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/book2"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dream"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="142dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b2t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:text="@string/the_n_journey_to_dreams"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/b2t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="@string/amelinda_n_colista"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/b2t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=" FREE" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/book3"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/story"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="142dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b3t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:text="@string/the_n_story_n_girl"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/b3t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Honey Jewelz"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/b3t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="  FREE" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="New books"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hor1" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="183dp">
+
+            <LinearLayout
+                android:layout_width="800dp"
+                android:layout_height="183dp"
+                android:background="@drawable/pink_bc"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="218dp">
+
+
+                <ImageView
+                    android:id="@+id/book7"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/chasing"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="142dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b7t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:text="  Chasing in\n  the wild"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/b7t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="  4REUMINCT"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/b7t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="  FREE" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/book6"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hazel"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="142dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b6t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:text="  Hazel fine\n  Sings\n  along"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/b6t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="  Katie\n  Wicks"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/b6t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="  5$" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/book4"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/blackpink"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_width="82dp"
+                    android:layout_height="142dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b4t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="81dp"
+                        android:text="  Black\n  Pink"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/b4t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="  Amelinda \n  Collista"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/b4t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="  FREE" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/nav"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+            <Button
+                android:layout_marginRight="37dp"
+                android:id="@+id/home"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_home_24"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" />
+
+            <Button
+                android:layout_marginRight="37dp"
+                android:id="@+id/category"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_category_24"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" />
+
+            <Button
+                android:layout_marginRight="37dp"
+                android:id="@+id/library"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_article_24"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" />
+
+            <Button
+                android:layout_marginRight="37dp"
+                android:id="@+id/profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_account_circle_24"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

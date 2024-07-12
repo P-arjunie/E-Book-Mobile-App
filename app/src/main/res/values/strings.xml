@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">E-Book</string>
+    <string name="search_read_npurchase">Search, read\npurchase</string>
+    <string name="using_search_filters_quickly_and_easily_nfind_the_books_you_need_buy_books_at_the_best_price_on_the_market">Using search filters, quickly and easily\nfind the books you need. Buy books at the best price on the market.</string>
+    <string name="search">Search</string>
+    <string name="read_npurchase">read\npurchase</string>
+    <string name="Search">Search,</string>
+    <string name="read">read</string>
+    <string name="purchase">purchase</string>
+    <string name="next">Next</string>
+    <string name="suspense_n">Suspense\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nhello_rose">\nHello Rose!</string>
+    <string name="discover_nbooks">Discover\nBooks</string>
+    <string name="popular">Popular</string>
+    <string name="the_n_chapstick_n_girl">The\n chapstick\n girl</string>
+    <string name="honey_jewelz">Honey Jewelz</string>
+    <string name="free">FREE</string>
+    <string name="the_n_journey_to_dreams">The\n journey to dreams</string>
+    <string name="amelinda_n_colista">Amelinda\n Colista</string>
+    <string name="the_n_story_n_girl">The\n story\n girl</string>
+</resources>
